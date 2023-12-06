@@ -1,0 +1,51 @@
+/*==================================================================
+프로젝트명 : 통합관제시스템 및 판독 웹뷰어
+작성지 : 신정호
+작성일 : 2023년 11월 22일
+용도 : 기본 Root 설정 시트
+==================================================================*/
+
+:root {
+    --reading_color: #10c588;
+    --waiting_color: #F9AB5D;
+    --error_color: #D72A2A;
+    --reading_sub_color: rgba(20, 100, 73, 0.15);
+    --waiting_sub_color: rgb(238 168 97 / 50%);
+    --error_sub_color: rgba(166, 13, 13, 0.33);
+    --base_color: #2A2A2A;
+    --sub_color: #5F5F5F;
+    --comment_color: #808080;
+    --monitor_color: #FBFEFE;
+    --main_content_color: #F1F6F6;
+    --amount_color: #979797;
+    --tag_color: #585858;
+    --total_color: #505050;
+
+    --mainfont: "Roboto";
+
+    --monitor_header_font: calc(1.3rem + 1vw);
+    --monitor_tag_font: calc(0.6rem + 0.5vw) ;
+
+    --status_header_font: calc(0.7rem + 1vw);
+    --status_tag_font: calc(0.6rem + 0.4vw);
+
+    --monitor_tittle: calc(0.8rem + 1vw);
+    --monitor_num: calc(0.4rem + 0.9vw);
+    --monitor_time_tag: calc(0.1rem + 0.6vw);
+    --monitor_time: calc(0.1rem + 0.5vw);
+    --name_tag: calc(0.1rem + 0.6vw);
+    --num_tag: calc(0.3rem + 0.5vw);
+
+
+    --grid_content_font_size: calc(0.1rem + 1.2vw);
+
+    --label_font: calc(0.2rem + 0.7vw);
+
+    --graph_tittle_font: calc(0.3rem + 1vw);
+    --num_font: calc(1rem + 3vw);
+
+    --percentage_font: calc(0.5rem + 0.5vw);
+    --total_font: calc(0.4rem + 1vw);
+    --total_result_font: calc(0.4rem + 0.8vw);
+
+}

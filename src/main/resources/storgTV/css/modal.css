@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.line_grey {float: left; width: 100%; height: 1px; background-color: #cccccc; margin-top: 30px; }
+.bottom_btn_wrap_type1 { float: left; width:100%; margin-top: 30px; display: flex; flex-direction: row; justify-content: flex-end; grid-column-gap: 5px;padding-bottom: 30px }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999999999999999999999999999999999999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(14,16,19,0.7);
+}
+
+.modal-content { height: 100%;
+    width: 100%; /* Could be more or less, depending on screen size */;
+    position: relative; display: flex; justify-content: center; align-items: center; }
+.modal-content_in{   width: 100%;background-color: #ffffff; float: left;   height: auto;  position: relative;  padding:80px 30px 30px 30px; }
+.modal-content_in .modal_title {font-size: 18px; font-weight: 600; font-family: 'Noto Sans KR'; color: #fff; padding-bottom: 24px; position: absolute; left:30px; top:18px; }
+.modal-content_in .modal_title .title_s{ margin-left: 14px; font-size: 12px; font-weight: 600; font-family: 'Noto Sans KR'; color: #666666; padding-bottom: 24px;}
+.modal-content_in .modal_close{position: absolute; right: 20px; top:12px;  cursor: pointer}
+.modal-content_in .modal_close i{font-size: 30px;transition: 0.3s ease all; color: #fff}
+.modal-content_in .modal_close:hover i{font-size: 30px; color:#000}
+
+.w_450{ width:450px; float: left}
+.w_520{ width:520px; float: left}
+.w_780{ width:780px!important; float: left}
+.w_1200{ width:1200px; float: left}
+.w_90vw { width: 90vw; float:left}
+.w_70vw { width: 70vw; float:left}
+
+.close { position: absolute; right: 35px; top: 15px; font-size: 40px; font-weight: bold; color: #f1f1f1; }
+.close:hover,
+.close:focus { color: #f44336; cursor: pointer; }

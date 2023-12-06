@@ -1,0 +1,72 @@
+/*==================================================================
+프로젝트명 : 판독 웹뷰어
+작성지 : 신정호
+작성일 : 2023년 11월 22일
+용도 : 판독 웹뷰어 설정용 스타일시트
+==================================================================*/
+
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, p, ul, ol {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 500;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+
+/* common */
+a {display: block;}
+a i {display: inline-block; margin-left: 5px;}
+body {font-family: var(--mainfont);}
+
+
+/* module */
+/* min-height: 1600px; */
+body {overflow: hidden;}
+main {position: relative; height: 100vh; width: 100vw;}
+.main_content {max-width: 100%; width: 100%; box-sizing: border-box; padding: 3%; margin: 0 auto;}
+.wrapper {position: relative; height: 89vh; display: flex; flex-direction: row; border-radius: calc(0.1rem + 0.8vw); margin: 0 auto; background-color:var(--main_content_color); box-shadow: 0px 4px 10px 0px rgba(148, 148, 148, 0.25); border: 2px solid rgba(148, 148, 148, 0.25)}
+.header {position: relative; display: flex; padding: 3% 1% 4% 0;}
+
+/* content wrap */
+.content_wrap {display: flex; flex-direction: column; padding: 0% 2% 2% 2%; justify-content: flex-start;}
+.monitor_content {width: 85%; border-radius: calc(0.1rem + 0.8vw); background-color: var(--monitor_color); box-shadow: 10px 0px 17px 5px rgba(190, 207, 207, 0.20);}
+
+/* monitor */
+.monitor_header {display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 3% 1% 2.6% 0 !important;}
+.header_wrap {display: flex; width: 50%; align-items: baseline;}
+.monitor_header > p {display: inline-block;}
+.header_left {display: flex;}
+
+/* item */
+.item_list_wrapper {overflow: scroll; height: 94%;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */}
+.item_list_wrapper::-webkit-scrollbar {    display: none;}
+.item_list_container {padding: 0 0 0 4%; margin-bottom: 7%;}
+.item_list {display: flex; justify-content: space-between; font-size: var(--label_font); align-items: center; font-weight: 700; }
+.item_name {font-weight: 400; width: 40%}
+.item_bar {width: 40%; display: flex; justify-content: flex-end;}
+
+/* icn logo */
+.icn_logo {width: calc(22.3rem + 1vw); text-align: center;}
+.icn_logo img {width: calc(12.3rem + 3.5vw); margin-top: 14%;}
+
+/* id */
+.id_num_container {display: flex; flex-direction: column; font-size: calc(0.46rem + 0.4vw);}
+.id_tag_name {text-align: right; font-weight: 300; color: #808080; }
+.id_num {display: flex; justify-content: flex-end; font-weight: 800; color: #FB9D16; padding-top: 2%;}
+
+/* image */
+.image_container {height: 74%; font-size: var(--graph_tittle_font); background-color: #f1f6f726; padding: 1.5%; margin: 0 auto;}
+.image_title { width: 75%; color: #303C4D;}
+.image_titleBar {border-left: 6px solid #303C4D; margin-right: 2%}
+.image_container .image {width: 100%; margin: 0 auto;}
+.image_wrapper {margin: 0 auto; padding-top: 2%; width: 100%; height: 90%;}
+.image_wrapper img {height: 81vh !important;   width: 100%; object-fit: contain;}
+.status_text{margin: 14%; font-family: 'JetBrains Mono', monospace; text-align: center;}
+.num{font-size: 100px}

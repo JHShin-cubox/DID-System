@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/**** 공통소스 ****/
+@-ms-viewport {
+  width: device-width;
+}
+
+@font-face {
+    font-family:'Roboto';
+    font-weight:300;
+    font-style: normal;
+    src: url('/storgTV/font/Roboto-Thin.ttf') format('truetype')
+}
+
+@font-face {
+    font-family:'Roboto';
+    font-weight:500;
+    font-style: normal;
+    src: url('/storgTV/font/Roboto-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family:'Roboto';
+    font-weight:600;
+    font-style: normal;
+    src: url('/storgTV/font/Roboto-Medium.ttf') format('truetype')
+}
+
+@font-face {
+    font-family:'Roboto';
+    font-weight:700;
+    font-style: normal;
+    src: url('/storgTV/font/Roboto-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:300;
+    font-style: normal;
+    src: url('/storgTV/font/NanumSquareL.eot');
+    src: url('/storgTV/font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+         url('/storgTV/font/NanumSquareL.woff') format('woff'),
+         url('/storgTV/font/NanumSquareL.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:400;
+    font-style: normal;
+    src: url('/storgTV/font/NanumSquareR.eot');
+    src: url('/storgTV/font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+         url('/storgTV/font/NanumSquareR.woff') format('woff'),
+         url('/storgTV/font/NanumSquareR.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:700;
+    font-style: normal;
+    src: url('/storgTV/font/NanumSquareB.eot');
+    src: url('/storgTV/font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+         url('/storgTV/font/NanumSquareB.woff') format('woff'),
+         url('/storgTV/font/NanumSquareB.ttf') format('truetype')
+}
