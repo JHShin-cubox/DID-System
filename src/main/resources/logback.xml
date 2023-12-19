@@ -1,0 +1,35 @@
+<configuration>
+    <property name="LOG_DIR" value="C:/project/logs" />
+
+    <!-- Appenders 설정 -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 로그 파일의 기본 경로 -->
+        <file>${LOG_DIR}/DidSystem.log</file>
+
+        <!-- Rolling 정책 설정 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOG_DIR}/DidSystem-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+
+            <!-- each file should be at most 1MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>500MB</maxFileSize>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 로거 설정 -->
+    <root level="info">
+        <appender-ref ref="file" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
+

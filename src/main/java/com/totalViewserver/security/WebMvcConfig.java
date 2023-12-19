@@ -12,7 +12,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/storgTV/**").addResourceLocations("classpath:/storgTV/");
         registry.addResourceHandler("/image/**")
-//                .addResourceLocations("file:///C:/testImage/");
+//                .addResourceLocations("file:///C:/did_image/");
 //                .addResourceLocations("file:///home/ubuntu/Pictures/");
 //                .addResourceLocations("file:///home/cubox/Pictures/");
                 .addResourceLocations("file:///home/cubox/totalImage/");

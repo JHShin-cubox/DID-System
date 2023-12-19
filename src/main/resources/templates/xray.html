@@ -54,6 +54,7 @@
                 stompClient.connect({}, function (frame) {
                     stompClient.subscribe('/totalView/xray', function (message) {
                         const data = JSON.parse(message.body);
+                        console.log(data)
                         test(data.filename,data.status); // HTML에서 정의한 함수 실행
                         disconnect();
                         connect();
@@ -81,6 +82,8 @@
                     clearInterval(numberInterval);
                 }
 
+
+
                 $('#result').text(status);
                 let count = 20;
                 $('#reset').text(20)
@@ -98,14 +101,6 @@
                         $('#result').text('대기중')
                         $('#reset').text(20)
                         clearInterval(numberInterval);
-                        $.ajax({
-                            url : "imageDeleteCom",
-                            method : "post",
-                            data : {"name" : val},
-                            success : function(data){
-                                console.log("파일 삭제");
-                            }
-                        })
                     }
                 }
                 numberInterval = setInterval(updateCount, 1000);

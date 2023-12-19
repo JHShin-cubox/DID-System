@@ -54,6 +54,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-integration'
     testImplementation 'org.springframework.boot:spring-boot-starter-websocket'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
+//    implementation 'ch.qos.logback:logback-classic'
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
 }
 
 

@@ -98,14 +98,6 @@
                     $('#result').text('대기중')
                     $('#reset').text(20)
                     clearInterval(numberInterval);
-                    $.ajax({
-                        url : "imageDeleteCom",
-                        method : "post",
-                        data : {"name" : val},
-                        success : function(data){
-                            console.log("파일 삭제");
-                        }
-                    })
                 }
             }
             numberInterval = setInterval(updateCount, 1000);

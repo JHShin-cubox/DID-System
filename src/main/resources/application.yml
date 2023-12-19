@@ -9,6 +9,10 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
+  security:
+    user:
+      password: 1111
+      name: user
 
   main:
     allow-bean-definition-overriding: true
@@ -16,6 +20,9 @@ spring:
 
   upload:
     dir: /path/upload
+  logging:
+    level:
+      root: info
 
 server:
   port : 8083

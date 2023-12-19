@@ -1,0 +1,78 @@
+2023-12-12 17:37:53.598 [restartedMain] INFO  c.t.TotalViewServerApplication - Starting TotalViewServerApplication using Java 11.0.17 on DESKTOP-01AM5NA with PID 38816 (C:\project\TotalViewServer\out\production\classes started by 신정호 in C:\project\TotalViewServer)
+2023-12-12 17:37:53.599 [restartedMain] INFO  c.t.TotalViewServerApplication - The following 1 profile is active: "test"
+2023-12-12 17:37:53.802 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-12 17:37:53.802 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-12 17:37:54.491 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-12-12 17:37:54.501 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-12-12 17:37:54.672 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-12 17:37:54.677 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-12 17:37:54.972 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-12-12 17:37:54.980 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-12-12 17:37:54.980 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-12 17:37:54.980 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-12-12 17:37:55.081 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-12 17:37:55.082 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1278 ms
+2023-12-12 17:37:55.829 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d1b04af6-97c5-41c7-aee3-5776575940bc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-12-12 17:37:55.942 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21993c88, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c76cc92, org.springframework.security.web.context.SecurityContextPersistenceFilter@22f343bb, org.springframework.security.web.header.HeaderWriterFilter@1dcbdb68, org.springframework.security.web.authentication.logout.LogoutFilter@4fb5fb41, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@160eb727, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f7872f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b1e395e, org.springframework.security.web.session.SessionManagementFilter@4ec2b8ac, org.springframework.security.web.access.ExceptionTranslationFilter@38ca30fd]
+2023-12-12 17:37:56.484 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-12 17:37:56.641 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-12-12 17:37:56.642 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2023-12-12 17:37:56.642 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2023-12-12 17:37:56.642 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-12-12 17:37:56.659 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2023-12-12 17:37:56.661 [restartedMain] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2023-12-12 17:37:56.661 [restartedMain] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1e8ba226]]
+2023-12-12 17:37:56.661 [restartedMain] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2023-12-12 17:37:56.673 [restartedMain] INFO  c.t.TotalViewServerApplication - Started TotalViewServerApplication in 3.695 seconds (JVM running for 4.785)
+2023-12-12 17:38:14.026 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2023-12-12 17:38:14.026 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1e8ba226]]
+2023-12-12 17:38:14.026 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2023-12-12 17:38:14.161 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-12-12 17:38:14.161 [SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2023-12-12 17:38:14.162 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2023-12-12 17:38:23.361 [restartedMain] INFO  c.t.TotalViewServerApplication - Starting TotalViewServerApplication using Java 11.0.17 on DESKTOP-01AM5NA with PID 15040 (C:\project\TotalViewServer\out\production\classes started by 신정호 in C:\project\TotalViewServer)
+2023-12-12 17:38:23.361 [restartedMain] INFO  c.t.TotalViewServerApplication - The following 1 profile is active: "test"
+2023-12-12 17:38:23.542 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-12 17:38:23.542 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-12 17:38:24.193 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-12-12 17:38:24.202 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-12-12 17:38:24.365 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-12 17:38:24.370 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-12 17:38:24.654 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2023-12-12 17:38:24.664 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2023-12-12 17:38:24.665 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-12 17:38:24.665 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-12-12 17:38:24.760 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-12 17:38:24.760 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1217 ms
+2023-12-12 17:38:25.382 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5d8d1051-3ea1-426f-861c-1b2e6146b3aa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-12-12 17:38:25.476 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d31f00, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@458a521a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ecf702d, org.springframework.security.web.header.HeaderWriterFilter@4326d1bc, org.springframework.security.web.authentication.logout.LogoutFilter@30390640, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@542030a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ea16d47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b7ecb8d, org.springframework.security.web.session.SessionManagementFilter@766e9d76, org.springframework.security.web.access.ExceptionTranslationFilter@4b33f92]
+2023-12-12 17:38:25.977 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-12 17:38:26.094 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-12-12 17:38:26.094 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2023-12-12 17:38:26.094 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2023-12-12 17:38:26.094 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2023-12-12 17:38:26.108 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2023-12-12 17:38:26.110 [restartedMain] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2023-12-12 17:38:26.110 [restartedMain] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@41c22dc0]]
+2023-12-12 17:38:26.110 [restartedMain] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2023-12-12 17:38:26.123 [restartedMain] INFO  c.t.TotalViewServerApplication - Started TotalViewServerApplication in 3.291 seconds (JVM running for 4.549)
+2023-12-12 17:38:52.230 [http-nio-8083-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12 17:38:52.231 [http-nio-8083-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-12 17:38:52.234 [http-nio-8083-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-12-12 17:38:52.336 [http-nio-8083-exec-10] INFO  c.t.controller.MainController - info
+2023-12-12 17:40:15.796 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2023-12-12 17:40:15.796 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@41c22dc0]]
+2023-12-12 17:40:15.796 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2023-12-12 17:40:15.923 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-12-12 17:40:15.923 [SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2023-12-12 17:40:15.923 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
