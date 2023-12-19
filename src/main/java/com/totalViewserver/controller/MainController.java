@@ -57,8 +57,8 @@ public class MainController {
     @ResponseBody
     public String sendMessage(@RequestPart("file") MultipartFile file, @RequestParam("type")String type, @RequestParam("status")String status, Model model) {
         String result;
-//        String imagePath = "C:/did_image";
-        String imagePath = "/home/cubox/totalImage/";
+        String imagePath = "C:/did_image";
+//        String imagePath = "/home/cubox/totalImage/";
         String originalFilename = file.getOriginalFilename();
 
         //마지막 .위치 찾기
