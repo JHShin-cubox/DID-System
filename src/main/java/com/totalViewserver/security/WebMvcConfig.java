@@ -1,3 +1,10 @@
+/*==================================================================
+프로젝트명 : DID 시스템
+작성지 : 신정호
+작성일 : 2023년 12월 04일
+용도 : MVC 설정 및 관리
+==================================================================*/
+
 package com.totalViewserver.security;
 
 import org.springframework.context.annotation.Configuration;
